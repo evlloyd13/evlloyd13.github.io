@@ -7,7 +7,7 @@ img {
     display: block;
 }
 
-div.container{
+div.home-container, div.container{
     max-width: 37em;
     margin: auto;
 }
@@ -117,4 +117,99 @@ footer p{
         margin-right: 0em;
     }
 
+}
+@media only screen and (min-width: 60em){
+
+    div.home-container{
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.container{
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.container aside{
+        margin-top: 0;
+    }
+
+    header, footer{
+        grid-column: 1/3;
+    }
+
+    div.home-container main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    div.home-container aside{
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    section.mainstory{
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    section.mainstory a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.mainstory a figure{
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.mainstory a figure img{
+        object-fit: cover;
+    }
+
+    section.mainstory a h2{
+        flex: 0 0 1em
+    }
+
+    section.mainstory a p{
+        flex: 0 0 4em;
+    }
+
+
+    section.secondary{
+        display: flex;
+    }
+
+    section.secondary a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.secondary a figure{
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.secondary a figure img{
+        object-fit: cover;
+    }
+
+    section.secondary a h2{
+        flex: 0 0 1em
+    }
+
+    section.secondary a p{
+        flex: 0 0 4em;
+    }
 }
