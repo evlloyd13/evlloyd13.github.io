@@ -18,19 +18,22 @@ font-weight: bold;
 padding: .25em 0em;
 }
 
-ul li a {
-    color: rgb(118, 139, 152);
-}
 
 h2{
-    font-family: serif;
-    color: rgb(118, 139, 152);
-    font-weight: bold;
+    font-family: sister-frisky, sans-serif;
+    font-style: normal;
+    color: rgb(164, 20, 63);
     margin: 0em .3em;
 }
 
+aside h2{
+    color: rgb(147, 175, 144);
+    font-family: "mansalva", sans-serif;
+}
+
 section.tertiary h2{
-    border-top: 1px solid rgb(118, 139, 152);
+    font-family: mansalva, sans-serif;
+    border-top: 1px solid rgb(147, 175, 144);
     padding: .5em 0em .2em;
     margin: 0em .6em;
 }
@@ -38,10 +41,12 @@ section.tertiary h2{
 section.secondary h2{
     font-size: 1.5em;
     padding: .15em 0em;
+    color: rgb(141, 174, 219);
+    font-family: "mansalva", sans-serif;
 }
 
 section.mainstory h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0em .2em;
 }
 
@@ -51,26 +56,31 @@ article h2 {
 }
 
 p{
-  font-family: sans-serif;  
+  font-family: clother, sans-serif;
   color: rgb(0, 0, 0);
   margin: 0em .6em 1.5em;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 article p{
     margin-top: 1em;
 }
 
-aside p{
+aside section.secondary p{
     margin-bottom: 2em;
 }
 nav{
-    font-family: sans-serif;
+    font-family: mansalva, sans-serif;
+    font-size: 1.3em;
+}
+
+nav ul li a{
+    color: rgb(43, 6, 61);
 }
 
 h1{
-    width: 10em;
-    margin-bottom: 1.5em;
+    width: 18em;
+    margin-bottom: 1em;
 }
 
 a{
@@ -78,18 +88,18 @@ a{
 }
 
 header{
-margin: .6em
+margin: .6em;
 }
 
 aside{
-    background-color: rgb(212, 210, 255);
+       background-color: rgb(252, 244, 208);
     padding: 1em .5em;
     margin-top: 1em;
 }
 figcaption{
     margin: .2em .6em;
     color: rgb(126, 126, 126);
-    font-family: sans-serif;
+    font-family: clother, sans-serif;
     font-style: italic;
     line-height: 1.2;
 }
@@ -101,7 +111,7 @@ footer{
   height: 3em;
   box-sizing: border-box;
   padding: 1em 0em;
-  background: rgb(118, 139, 152);
+  background: rgb(43, 6, 61);
 }
 
 footer p{
@@ -150,6 +160,11 @@ footer p{
         grid-gap: 1em;
     }
 
+    main section.mainstory{
+            background-color: rgb(252, 244, 208);
+            padding: 1em;
+    }
+
     div.home-container aside{
         background: none;
         padding: 0;
@@ -178,7 +193,7 @@ footer p{
     }
 
     section.mainstory a h2{
-        flex: 0 0 1em
+        flex: 0 0 1em;
     }
 
     section.mainstory a p{
@@ -206,7 +221,7 @@ footer p{
     }
 
     section.secondary a h2{
-        flex: 0 0 1em
+        flex: 0 0 1em;
     }
 
     section.secondary a p{
