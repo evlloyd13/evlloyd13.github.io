@@ -86,7 +86,7 @@ div.gallery-container main{
 
 div.gallery-container figure{
     margin: 0;
-    width: calc(100%-2em);
+    width: calc(100% - 2em);
     position: absolute;
     opacity: 0;
     transition: opacity .5s;
@@ -97,14 +97,13 @@ div.gallery-container figcaption {
     font-weight: bold;
     font-family: clother, sans-serif;
     margin: 1em 0;
-    color:  rgbrgb(147, 175, 144);
+    color: rgb(147, 175, 144);
 }
 
 
 div.gallery-container input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
 input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
 input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
-input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
 input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
 input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
 input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
