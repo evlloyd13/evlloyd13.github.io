@@ -86,7 +86,7 @@ div.gallery-container main{
 
 div.gallery-container figure{
     margin: 0;
-    width: calc(100% - 2em);
+    width: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity .5s;
@@ -358,4 +358,58 @@ footer p{
     section.secondary a p{
         flex: 0 0 4em;
     }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    h1 {  
+        background-image: url("logo-alt.svg");  
+        background-repeat: no-repeat;  
+        background-size: contain; 
+    }
+    h1 img {  
+        opacity: 0;  
+    } 
+nav ul li a{
+    color: rgb(252, 244, 208);
+} 
+h2{
+    color: rgb(141, 174, 219);
+}
+section.secondary h2{ 
+    color: rgb(147, 175, 144);
+}
+aside{
+    background-color: rgb(43, 6, 61);
+}
+main section.mainstory{
+    background-color: rgb(43, 6, 61);
+}
+aside h2{
+    color: rgb(141, 174, 219)
+}
+section.tertiary h2{
+    border-top: 1px solid rgb(141, 174, 219);
+}
+footer{
+    background-color: rgb(252, 244, 208);
+}
+footer p{
+    color: rgb(164, 20, 63);
+}
+p{
+    color: rgb(255,255,255);
+}
+div.newsletter-container section {
+    background: rgb(164, 20, 63);
+}
+button{
+    background-color: rgb(141, 174, 219);
+    color: rgb(164, 20, 63);
+}
+section.newsletter label, section.personal-info label{
+    color: rgb(255,255,255);
+}
+body {
+        background-color: rgb(22, 22, 22);
+}
 }
